@@ -1,7 +1,7 @@
 import project1 from "../assets/projects/chat.webp";
-import project2 from "../assets/projects/netflix.webp";
+import project2 from "../assets/projects/task.png";
 import project3 from "../assets/projects/resume.webp";
-import project4 from "../assets/projects/todo.webp";
+import project4 from "../assets/projects/ai.png";
 
 export const HERO_CONTENT = ` Passionate about web development, I specialize in building seamless, scalable, and user-friendly web experiences. Leveraging technologies like JavaScript, React, and more, I create responsive and dynamic web applications. With a focus on clean code and intuitive design, I aim to turn ideas into impactful solutions and continuously evolve as a Full Stack Developer.`;
 
@@ -16,11 +16,11 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", "Socket.io"],
   },
   {
-    title: "Netflix Clone",
+    title: "Task Manager App",
     image: project2,
     description:
-      "A sleek and modern Netflix clone app offering a user-friendly interface with a dark theme. The app features a prominent movie banner, a grid layout of movie and TV show thumbnails, and intuitive navigation with categories like 'Home', 'Trending', 'My List', and 'Search'. It provides a seamless streaming experience with easy access to a variety of content.",
-    technologies: ["HTML", "CSS", "Firebase", "API", "React"],
+      "A responsive and user-friendly task management application built with the MERN stack. It allows users to add, update, delete, and categorize tasks with priority levels. Includes visual task insights using pie and bar charts, with seamless UI powered by Tailwind CSS.",
+    technologies: ["MongoDB", "React", "Express", "NodeJS", "Axios"],
   },
   {
     title: "Resume",
@@ -30,11 +30,16 @@ export const PROJECTS = [
     technologies: ["HTML", "React", "Tailwind CSS"],
   },
   {
-    title: "Todo App",
+    title: "AI Chat Bot Interview",
     image: project4,
     description:
-      "A simple and user-friendly To-Do app that helps manage tasks efficiently. It features a clean design with checkboxes for task completion, an input field to add new tasks, and options to edit or delete tasks. Perfect for staying organized and productive.",
-    technologies: ["NodeJs", "Express", "MongoDB", "React"],
+      "An AI-powered interview simulation tool designed to help users practice and improve their interview skills. Built with a clean and intuitive interface, it supports dynamic question flow, real-time interactions, and integration with NLP APIs for smart responses.",
+    technologies: [
+      "Google Gemini",
+      "Firebase",
+      "VAPI",
+      "Firebase Authentication",
+    ],
   },
 ];
 

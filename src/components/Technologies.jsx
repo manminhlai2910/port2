@@ -21,12 +21,12 @@ const iconVariants = (duration) => ({
 });
 const Technologies = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <div className="border-b border-gray-200 pb-24  text-gray-800">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-4xl font-bold text-emerald-600"
       >
         Technologies
       </motion.h1>
@@ -40,7 +40,7 @@ const Technologies = () => {
           variants={iconVariants(2.4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 border-gray-200 p-4"
         >
           <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
@@ -48,15 +48,15 @@ const Technologies = () => {
           variants={iconVariants(2.4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 border-gray-200 p-4"
         >
-          <TbBrandNextjs className="text-7xl" />
+          <TbBrandNextjs className="text-7xl text-gray-800" />
         </motion.div>
         <motion.div
           variants={iconVariants(2.4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 border-gray-200 p-4"
         >
           <SiMongodb className="text-7xl text-green-500" />
         </motion.div>
@@ -64,7 +64,7 @@ const Technologies = () => {
           variants={iconVariants(2.4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 border-gray-200 p-4"
         >
           <DiRedis className="text-7xl text-red-700" />
         </motion.div>
@@ -72,7 +72,7 @@ const Technologies = () => {
           variants={iconVariants(2.4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 border-gray-200 p-4"
         >
           <FaNodeJs className="text-7xl text-green-500" />
         </motion.div>
@@ -80,7 +80,7 @@ const Technologies = () => {
           variants={iconVariants(2.4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="rounded-2xl border-4 border-gray-200 p-4"
         >
           <BiLogoPostgresql className="text-7xl text-sky-700" />
         </motion.div>

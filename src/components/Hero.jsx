@@ -14,10 +14,10 @@ const container = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+    <div className="border-b border-gray-200 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-center lg:items-start text-gray-800">
             <motion.h1
               variants={container(0)}
               initial="hidden"
@@ -30,7 +30,7 @@ const Hero = () => {
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+              className="bg-gradient-to-r from-emerald-400 via-indigo-500 to-emerald-600 bg-clip-text text-3xl tracking-tight text-transparent"
             >
               Full Stack Developer
             </motion.span>
@@ -38,7 +38,7 @@ const Hero = () => {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
+              className="my-2 max-w-xl py-6 font-light tracking-tighter text-gray-700"
             >
               {HERO_CONTENT}
             </motion.p>
@@ -52,7 +52,7 @@ const Hero = () => {
               transition={{ duration: 1, delay: 1.2 }}
               src={profilePic}
               alt=""
-              className="rounded-2xl"
+              className="rounded-2xl border border-gray-200 shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
             />
           </div>
         </div>

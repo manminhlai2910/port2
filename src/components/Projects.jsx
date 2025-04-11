@@ -5,12 +5,12 @@ import { gitUrls } from "../constants";
 
 const Projects = () => {
   return (
-    <div className="border-b border-e-neutral-900 pb-4">
+    <div className="border-b border-gray-200 pb-4 text-gray-800">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-4xl font-semibold text-emerald-600"
       >
         Projects
       </motion.h2>
@@ -28,14 +28,14 @@ const Projects = () => {
                 alt={project.title}
                 width={150}
                 height={150}
-                className="mb-6 rounded"
+                className="mb-6 rounded border border-gray-200 shadow-sm"
               />
               {project.title === "Resume" && (
                 <a
-                  href="../../public/Resume-2.pdf" // Link to the PDF file in public/assets folder
+                  href="../../public/Resume.pdf" // Link to the PDF file in public/assets folder
                   target="_blank" // Opens the link in a new tab
                   rel="noopener noreferrer" // For security reasons
-                  className="block mx-0 my-4 px-6 py-2 rounded-full w-39 border-2 border-purple-900 text-purple-900 hover:bg-purple-900 hover:text-white hover:border-purple-900 transition-all duration-300 cursor-pointer"
+                  className="block mx-0 my-4 px-6 py-2 rounded-full w-fit border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white transition-all duration-300 cursor-pointer"
                 >
                   Download CV
                 </a>
@@ -47,21 +47,25 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full max-w-full lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
-              <p className="mb-4 text-neutral-400">{project.description}</p>
-              {project.technologies.map((tech, index) => (
-                <>
-                  <span
-                    key={index}
-                    className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"
-                  >
-                    {tech}
-                  </span>
-                </>
-              ))}
+              <h6 className="mb-2 font-semibold text-indigo-500 text-xl">
+                {project.title}
+              </h6>
+              <p className="mb-4 text-gray-600">{project.description}</p>
+              <div className="mb-4">
+                {project.technologies.map((tech, index) => (
+                  <>
+                    <span
+                      key={index}
+                      className="mr-2 mb-2 inline-block rounded bg-emerald-100 px-2 py-1 text-sm font-medium text-emerald-700"
+                    >
+                      {tech}
+                    </span>
+                  </>
+                ))}
+              </div>
               <button
                 key={index}
-                className="block mx-0 my-4 px-6 py-2 rounded-full border-2 border-purple-900 text-purple-900 hover:bg-purple-900 hover:text-white hover:border-purple-900 transition-all duration-300 cursor-pointer"
+                className="px-6 py-2 rounded-full border-2 border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white transition-all duration-300 cursor-pointer"
                 onClick={() =>
                   (window.location.href = "https://github.com/manminhlai2910")
                 }
