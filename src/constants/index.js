@@ -1,4 +1,4 @@
-import project1 from "../assets/projects/chat.webp";
+import project1 from "../assets/projects/chat.png";
 import project2 from "../assets/projects/task.png";
 import project3 from "../assets/projects/resume.webp";
 import project4 from "../assets/projects/ai.png";
@@ -14,6 +14,7 @@ export const PROJECTS = [
     description:
       "A sleek, user-friendly chat app with a modern interface, real-time messaging, and color theme mode support, offering smooth communication with intuitive features and a minimalist design.",
     technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB", "Socket.io"],
+    links: "https://github.com/manminhlai2910/chat",
   },
   {
     title: "Task Manager App",
@@ -21,6 +22,7 @@ export const PROJECTS = [
     description:
       "A responsive and user-friendly task management application built with the MERN stack. It allows users to add, update, delete, and categorize tasks with priority levels. Includes visual task insights using pie and bar charts, with seamless UI powered by Tailwind CSS.",
     technologies: ["MongoDB", "React", "Express", "NodeJS", "Axios"],
+    links: "https://github.com/manminhlai2910/task",
   },
   {
     title: "Resume",
@@ -28,6 +30,7 @@ export const PROJECTS = [
     description:
       "A professional and modern resume website designed to showcase your skills, experience, and qualifications. The site features a clean, user-friendly layout with sections for personal information, work experience, education, skills, and contact details. It allows easy navigation and provides options for downloading or sharing your resume. The design is minimalist and visually appealing, offering a seamless experience for potential employers or clients to view your qualifications.",
     technologies: ["HTML", "React", "Tailwind CSS"],
+    links: "https://github.com/manminhlai2910/resume_2",
   },
   {
     title: "AI Chat Bot Interview",
@@ -40,6 +43,7 @@ export const PROJECTS = [
       "VAPI",
       "Firebase Authentication",
     ],
+    links: "https://github.com/manminhlai2910/AI-APP",
   },
 ];
 
@@ -48,10 +52,3 @@ export const CONTACT = {
   phoneNo: "443-264-0683",
   email: "manminhlai2910@gmail.com",
 };
-
-export const gitUrls = [
-  "https://github.com/manminhlai2910/chat",
-  "https://github.com/manminhlai2910/netflixclone",
-  "https://github.com/manminhlai2910/resume",
-  "https://github.com/manminhlai2910/todo",
-];

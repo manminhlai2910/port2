@@ -1,7 +1,6 @@
 import React from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
-import { gitUrls } from "../constants";
 
 const Projects = () => {
   return (
@@ -66,9 +65,7 @@ const Projects = () => {
               <button
                 key={index}
                 className="px-6 py-2 rounded-full border-2 border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white transition-all duration-300 cursor-pointer"
-                onClick={() =>
-                  (window.location.href = "https://github.com/manminhlai2910")
-                }
+                onClick={() => (window.location.href = project.links)}
               >
                 Github
               </button>
